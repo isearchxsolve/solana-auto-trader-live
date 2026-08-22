@@ -1,0 +1,12 @@
+# Core dependencies (already installed)
+requests>=2.31.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Live trading dependencies (NEW - required for --mode live)
+solana>=0.30.0
+solders>=0.18.0
+base58>=2.1.1
+
+# Optional: For better RPC performance
+httpx>=0.24.0

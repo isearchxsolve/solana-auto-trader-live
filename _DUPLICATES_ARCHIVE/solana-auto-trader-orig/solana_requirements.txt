@@ -1,0 +1,27 @@
+# Solana Trading AI Agent Requirements
+
+# Core dependencies (required)
+requests>=2.31.0
+
+# Optional: For live on-chain trading
+# Uncomment these if you want to trade with real Solana wallet
+# solana>=0.30.0
+# solders>=0.14.0
+
+# Optional: Enhanced features
+# pandas>=2.0.0        # Data analysis
+# numpy>=1.24.0        # Numerical operations  
+# tabulate>=0.9.0      # Table formatting
+# colorama>=0.4.6      # Colored terminal output
+# python-dotenv>=1.0.0 # Environment variables
+
+# Installation instructions:
+#
+# For paper trading only (minimal):
+#   pip install requests
+#
+# For live trading:
+#   pip install requests solana solders
+#
+# For full features:
+#   pip install -r solana_requirements.txt

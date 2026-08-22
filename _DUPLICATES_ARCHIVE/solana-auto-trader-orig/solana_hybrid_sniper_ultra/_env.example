@@ -1,0 +1,30 @@
+# ── Core ──────────────────────────────────────────────────────────────────────
+MODE="paper"                        # "paper" or "live"
+RPC_URL="https://mainnet.helius-rpc.com/?api-key=YOUR_KEY"
+PRIVATE_KEY="YOUR_PRIVATE_KEY_BASE58"
+JUPITER_BASE_URL="https://quote-api.jup.ag/v6"
+HELIUS_API_KEY="YOUR_HELIUS_KEY"
+BASE_TOKEN="So11111111111111111111111111111111111111112"
+
+# ── Trading ────────────────────────────────────────────────────────────────────
+TRADE_AMOUNT_SOL=0.05               # Max SOL per trade (actual size is dynamic, 25%-100% of this)
+MAX_OPEN_POSITIONS=5                # Max concurrent open positions
+PAPER_BALANCE_SOL=1.0               # Starting balance for paper mode
+
+# ── Take-profit & trailing stop ───────────────────────────────────────────────
+TAKE_PROFIT_MULT=2.0                # Sell 50% when price reaches 2x entry (100% gain)
+TRAILING_STOP_PCT=0.20              # Trail remaining 50% with 20% stop below peak
+
+# ── Daily loss circuit breaker ────────────────────────────────────────────────
+DAILY_LOSS_LIMIT=0.15               # Halt new entries if balance drops 15% from day start
+                                    # Resets at UTC midnight automatically
+
+# ── Outcome labeler (real data collection for model retraining) ───────────────
+ENABLE_LABELER=true                 # Set false to disable
+LABELER_DELAY_S=1800                # Seconds after eval to check outcome (default 30 min)
+LABELER_PUMP_THR=1.20               # Price must be >=120% of entry to label as pump
+LABELER_DUMP_THR=0.85               # Price must be <=85% of entry to label as dump
+LABELER_OUTPUT=labeled_outcomes.csv # Output file path
+
+# ── Logging ───────────────────────────────────────────────────────────────────
+LOG_LEVEL="INFO"                    # DEBUG for verbose output

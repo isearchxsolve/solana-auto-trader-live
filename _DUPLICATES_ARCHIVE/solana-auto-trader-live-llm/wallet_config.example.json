@@ -1,0 +1,17 @@
+{
+  "private_key": "YOUR_BASE58_PRIVATE_KEY_HERE",
+  "rpc_url": "https://api.mainnet-beta.solana.com",
+  "max_slippage_bps": 100,
+  "priority_fee_lamports": 1000,
+  
+  "_instructions": {
+    "private_key": "Your wallet's private key in base58 format. Get this from your wallet export.",
+    "rpc_url": "Solana RPC endpoint. Recommendations:",
+    "  - Free (slower): https://api.mainnet-beta.solana.com",
+    "  - Paid (faster): Helius, QuickNode, Alchemy",
+    "max_slippage_bps": "Maximum slippage in basis points (100 = 1%)",
+    "priority_fee_lamports": "Priority fee for faster transaction processing (1000 = 0.000001 SOL)"
+  },
+  
+  "_security_warning": "NEVER commit this file to git! Keep it secure!"
+}

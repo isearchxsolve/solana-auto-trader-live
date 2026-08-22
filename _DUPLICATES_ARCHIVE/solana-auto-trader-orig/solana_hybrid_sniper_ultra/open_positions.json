@@ -1,0 +1,26 @@
+{
+  "AMjzRn1TBQwQfNAjHFeBb7uGbbqbJB7FzXAnGgdFPk6K": {
+    "mode": "HWR",
+    "entries": 1,
+    "entry_prices": [
+      0.008172912933429909
+    ],
+    "entry_time": 1771772475.432973,
+    "avg_entry_price": 0.008172912933429909,
+    "peak_price": 0.008254194831446411,
+    "take_profit_taken": false,
+    "trailing_stop": 0.0
+  },
+  "7S6nrPVydTL3Tq5gN6AVWg9bSD5shbX7KGY2ZY6gpump": {
+    "mode": "MG",
+    "entries": 1,
+    "entry_prices": [
+      6.952552862809621e-05
+    ],
+    "entry_time": 1771777266.2771382,
+    "avg_entry_price": 6.952552862809621e-05,
+    "peak_price": 9.020478411961514e-05,
+    "take_profit_taken": false,
+    "trailing_stop": 0.0
+  }
+}
